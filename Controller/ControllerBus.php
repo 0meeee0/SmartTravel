@@ -3,8 +3,10 @@ require_once("Model\Bus\BusDao.php");
 
 class ControllerBus{
     function getbus(){
-        $BusDao = new BusDao();
-        $Bus = $BusDao->get_bus();
+        $CityDao = new CityDao();
+        $Bus = $CityDao->get_bus();
+
+      
         include "View\AddBus.php";
     }
 }

@@ -1,3 +1,4 @@
 <?php
-    include 'View\indexx.php';
-?>
+include "Controller\ControllerCity.php" ; 
+    $ControllerCity = new  ControllerCity ; 
+    $ControllerCity->getcity() ; 
